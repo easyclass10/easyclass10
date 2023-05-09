@@ -1,73 +1,139 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background: whitesmoke; 
+}
+section{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+section a{
+    margin: 10px;
+    font-size: 180%;
+    text-decoration: none;
+    color: white;
+    font-family: cooper black;
+}
+div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: Cooper Black;
+}
+h1{
+    font-family: cooper black;
 }
 
-body {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+.a1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    margin: 20px;
+    font-family: Cooper Black;
 }
 
-.contenedor {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.05);
+.a2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px;
+    font-family: Cooper Black;
 }
 
-.calculadora {
-  display: grid;
+#main-container{
+    padding-top: 200px;
+    text-align: center;
+}
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+}
+.btn-green{
+    color: white;
+    background-color: black;
+}
+.btn-green:hover{
+    background-color: green;
+}
+.btn-green:active{
+    background-color: red;
 }
 
-.resultado {
-  grid-column: span 4;
-  width: 400px;
-  height: 120px;
-  background: transparent;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-  border-right: 2px solid rgba(255, 255, 255, 0.05);
-  outline: none;
-  color: white;
-  font-size: 2rem;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: right;
+
+.btn-greenclaro{
+    color: white;
+    background-color: black;
+}
+.btn-greenclaro:hover{
+    background-color: green;
+}
+.btn-greenclaro:active{
+    background-color: red;
 }
 
-.tecla {
-  width: 100px;
-  display: grid;
-  height: 100px;
-  color: white;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-  border-right: 2px solid rgba(255, 255, 255, 0.05);
-  font-size: 1.5rem;
-  place-items: center;
-  cursor: pointer;
+.btn-greenins{
+    color: white;
+    background-color: black;
+}
+.btn-greenins:active{
+    background-color: red;
 }
 
-.tecla:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+.btn-greenfa{
+    color: white;
+    background-color: black;
+}
+.btn-greenfa:active{
+    background-color: red;
 }
 
-.tecla:active {
-  background-color: sandybrown;
-  font-size: 1.35rem;
+.btn-greeng{
+    color: white;
+    background-color: black;
+}
+.btn-greeng:active{
+    background-color: whitesmoke;
 }
 
-.clear {
-  grid-column: span 2;
-  width: 200px;
+
+
+.btn-greeny{
+    color: white;
+    background-color: black;
+}
+.btn-greeny:active{
+    background-color: green;
 }
 
-.mas {
-  grid-row: span 2;
-  height: 200px;
+
+.btn-materias{
+    color: white;
+    background-color: black;
 }
 
-.igual,
-igual:hover {
-  background-color: sandybrown;
+.btn-app{
+    color: white;
+    background-color: black;
+}
+.btn-app:hover{
+    background-color: black;
+}
+.btn-app:active{
+    background-color: red;
 }

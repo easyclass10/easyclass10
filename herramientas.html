@@ -13,195 +13,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" defer=""></script>
     <link rel="shortcut icon" href="nk.png" type="image/x-icon">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-      background-color: black; 
-    }
-    .visualizar{
-        width: 100%;
-    }
-    .contenedorGrid{
-        display: grid;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        grid-template-columns: auto;
-    }
-    .imgLogo{
-        width: 52px;
-        height: 44px;    
-    }
-  /*   .imagen{
-        width: 20%;
-        height: 20%;
-    } */
-    .contenedor{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-  /*   .contenedor>img{
-        height: 50%;
-        width: 50%;
-    } */
-    .contenedor>img{
-        height: 200px;
-        width: 300px;
-    } 
-    @media (max-width: 1300px){
-        .contenedor>img{
-            height: 240px; /* 200px */
-            width: 47.1%;/*  31% */
-        }
-        .contenedor{
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-    }
-    }
-    @media (max-width: 600px){
-        .contenedor>img{
-            height: 160px;/* 100px */
-            width: 47.1%;/*  31% */
-        }
-        .contenedor{
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-    }
-    }
-    @media (max-width: 400px){
-        .contenedor>img{
-            height: 90px;/*  60px */
-            width: 47.1%;/*  31% */
-        }
-        .contenedor{
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-    }
-    .imagenCol{
-      width: 70%;
-      height: 70%;
-    }
-    }
-    .contenidoModal{
-        background-color: black;
-    }
-    .centrarNumero{
-        text-align: center;
-    }
-    .centrarWpp{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .centrar{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-
-
-  .modal1 {
-  display: none;
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .modal1-content {
-    background-color: #fefefe;
-    border-radius: 5px;
-    padding: 1.5rem;
-    border: 1px solid #888;
-  /*  width: 70%; */
-  }
-
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  /* ///////////////////// */
-  .imgModal{
-    height: 400px;
-    width: 500px;
-  }
-  @media (max-width: 1300px){
-    .imgModal{
-    height: 400px;
-    width: 500px;
-    }
-  }
-  @media (max-width: 600px){
-    .imgModal{
-      height: 320px;
-      width: 400px;
-    }
-  }
-  @media (max-width: 500px){
-    .imgModal{
-      height: 256px;
-      width: 320px;
-    }
-  }
-  @media (max-width: 400px){
-    .imgModal{
-      height: 230.4x;
-      width: 288px;
-    }
-  }
-  @media (max-width: 300px){
-    .imgModal{
-      height: 164px;
-      width: 204.8px;
-    }
-  }
-  @media (max-width: 200px){
-    .imgModal{
-      height: 148px;
-      width: 184px;
-    }
-  }
-  @media (max-width: 200px){
-    .imgModal{
-      height: 120px;
-      width: 147px;
-    }
-  }
-  p{
-    margin-bottom: 0.2px;
-  }
-</style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <style>
-        nav{
-            background-color: black;
-        }
-    </style>
+
 <!-- barra de navegacion -->
 <nav class="navbar navbar-expand-lg navbar-dark py-1">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -230,6 +46,7 @@
         <a class="nav-link ml-auto pl-0" href="herramientas.html"><button type="button"  onclick="window.location.href='solicitud.php'"  class="btn btn-success">Herramientas</button></a>
     </div>
 </nav>
+
 <!-- modal para contactanos -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog mt-0 mb-2 h-75 d-flex justify-content-center align-items-center" role="document">
@@ -267,56 +84,51 @@
   </div>
 </div>
 
-   <div>
-        <h1><span size="10" style="color: greenyellow">easy</span><span size="10"  style="color: red">class</span></h1>
-    </div> 
+<div class="todo">
+<h1><span size="10" style="color: greenyellow">easy</span><span size="10"  style="color: red">class</span></h1>
 
-<div><h1>Biblioteca:</h1></div>
+<h1>Biblioteca:</h1>
+<li>
+    <a class="btn1 btn-green" href="https://drive.google.com/drive/folders/12OWtoVHq22UEZvsWO7vPn0PgAw6CSL4L?usp=sharing">BIBLIOTECA VIRTUAL</a>
+</li>
 
-    <div>
-        <li>
-            <a class="btn btn-green" href="https://drive.google.com/drive/folders/12OWtoVHq22UEZvsWO7vPn0PgAw6CSL4L?usp=sharing">BIBLIOTECA VIRTUAL</a>
-        </li>
-    </div>
 
-<div><h1>Aplicaciones</h1></div>    
-    <div>
+<h1>Aplicaciones</h1> 
     <ol>
          <li>
-        <a class="btn btn-green" href="calculadora.html">CALCULADORA SUMA, RESTA, MULTIPLICACION Y DIVISION</a>
+        <a class="btn1 btn-green" href="calculadora.html">CALCULADORA SUMA, RESTA, MULTIPLICACION Y DIVISION</a>
       </li>
       <li>
-        <a class="btn btn-green" href="inter/index.html">INTERPOLADOR LINEAL</a>
+        <a class="btn1 btn-green" href="inter/index.html">INTERPOLADOR LINEAL</a>
       </li>
       <li>
-        <a class="btn btn-green" href="fluido/index.html">CALULO REYNOLDS Y FACTOR DE FRICCION: MECANICA DE FLUIDOS</a>
+        <a class="btn1 btn-green" href="fluido/index.html">CALULO REYNOLDS Y FACTOR DE FRICCION: MECANICA DE FLUIDOS</a>
       </li>
       <li>
-        <a class="btn btn-green" href="conver/index.html">CALCULADORA DE MASA, MOLES, ATOMOS Y MOLECULAS</a>
+        <a class="btn1 btn-green" href="conver/index.html">CALCULADORA DE MASA, MOLES, ATOMOS Y MOLECULAS</a>
       </li>
       <li>
-        <a class="btn btn-green" href="dinero/index.html">CALCULADORA DE DINERO</a>
+        <a class="btn1 btn-green" href="dinero/index.html">CALCULADORA DE DINERO</a>
       </li>
       <li>
-        <a class="btn btn-green" href="vector/index.html">CALCULOS ENTRE VECTORES</a>
+        <a class="btn1 btn-green" href="vector/index.html">CALCULOS ENTRE VECTORES</a>
       </li>
        <li>
-        <a class="btn btn-green" href="convertidordetemperatura/index.html">CONVERTIDOR DE TEMPERATURA</a>
+        <a class="btn1 btn-green" href="convertidordetemperatura/index.html">CONVERTIDOR DE TEMPERATURA</a>
       </li>
        <li>
-        <a class="btn btn-green" href="recta3d/index.html">CALCULO RECTA EN 3D</a>
+        <a class="btn1 btn-green" href="recta3d/index.html">CALCULO RECTA EN 3D</a>
       </li>
        <li>
-        <a class="btn btn-green" href="plano/index.html">CALCULO PLANO EN 3D</a>
+        <a class="btn1 btn-green" href="plano/index.html">CALCULO PLANO EN 3D</a>
       </li>
         <li>
-        <a class="btn btn-green" href="determinante/index.html">DETERMINANTE DE UNA MATRIZ DE 3X3</a>
+        <a class="btn1 btn-green" href="determinante/index.html">DETERMINANTE DE UNA MATRIZ DE 3X3</a>
       </li>
       <li>
-        <a class="btn btn-green" href="derivadas/index.html">DERIVADA PRIMERA Y SEGUNDA. CALCULO DE: EXTREMOS, CONCAVIDAD, INFLEXION, GRAFICA DE FUNCION</a>
+        <a class="btn1 btn-green" href="derivadas/index.html">DERIVADA PRIMERA Y SEGUNDA. CALCULO DE: EXTREMOS, CONCAVIDAD, INFLEXION, GRAFICA DE FUNCION</a>
       </li>
     </ol>
-    </div>
-
+</div>
 </body>
 </html>

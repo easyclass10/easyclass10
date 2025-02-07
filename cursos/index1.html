@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyClass - Transformando la Educación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #28a745;
+            --primary-red: #dc3545;
+            --primary-blue: #007bff;
+            --dark: #333333;
+            --light: #F5F5F5;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background: var(--light);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+
+        .brand-green {
+            color: var(--primary-green);
+        }
+
+        .brand-red {
+            color: var(--primary-red);
+        }
+
+        .btn-materias {
+            color: white;
+            background-color: var(--dark);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .btn-materias:hover {
+            background-color: var(--primary-green);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-materias:active {
+            background-color: var(--primary-red);
+        }
+
+        .lesson-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lesson-item {
+            margin: 10px 0;
+        }
+
+        .video-container {
+            margin: 20px 0;
+        }
+
+        .section-title {
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .chapter-title {
+            color: var(--primary-red);
+            margin-bottom: 15px;
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            color: white;
+            padding: 4rem 0;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .footer-bg {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" aria-label="Menú de navegación principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html" aria-label="Página de inicio de EasyClass">
+                <img src="../nk.png" alt="Logo de EasyClass" height="40" width="40">
+                <span class="brand-green ms-2">easy</span><span class="brand-red">class</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cursos/index.html">Cursos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="header-bg text-white mt-5">
+        <div class="container text-center">
+            <h1 class="display-4">Curso de Ecuaciones Diferenciales</h1>
+            <p class="lead">Domina los conceptos fundamentales de las ecuaciones diferenciales con ejercicios prácticos</p>
+            <a href="https://forms.gle/rkErSLpFeGMuHi347" class="btn btn-success btn-lg">¡Comenta!</a>
+            <a href="https://drive.google.com/drive/folders/19zHz3IJpRAbptVHMonktPkgebOf7P4YC?usp=share_link" class="btn btn-outline-light btn-lg">📚 Archivos</a>
+        </div>
+    </header>
+
+    <!-- Contenido del curso -->
+    <section class="py-5 pb-1">
+        <div class="container">
+            <!-- Capítulo 1: ED de primer orden -->
+            <div class="mb-5">
+                <h2 class="chapter-title">Capítulo 1: ED de primer orden</h2>
+                <div class="video-container">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/Uit6cNq-2vI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <ul class="lesson-list">
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=Uit6cNq-2vI&t=6s">✅ Métodos para ED de primer orden: VARIABLES SEPARABLES</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=oR4EKN6EQ1Q">✅ Métodos para ED de primer orden: ECUACIONES LINEALES - 1</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=5OsPXm4uM4A">✅ Métodos para ED de primer orden: ECUACIONES LINEALES - 2</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=jskj403VUaA">✅ Métodos para ED de primer orden: ED EXACTAS - 1</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=7ea4IG1dZ0M">✅ Métodos para ED de primer orden: ED EXACTAS - 2</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=9Hz_RPmQb_0">✅ Métodos para ED de primer orden: ED CONVERTIBLES A EXACTAS - 1</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=qU8FnLe3WaQ">✅ Métodos para ED de primer orden: ED CONVERTIBLE A EXACTAS - 2</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=P0aId-HdlEk">✅ Métodos para ED de primer orden: SUSTITUCION y=ux; x=uy - 1</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=KXK2VuXBKK8">✅ Métodos para ED de primer orden: SUSTITUCION y=ux; x=uy - 2</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=UgkGePm8N6Y">✅ Métodos para ED de primer orden: SUSTITUCION y=ux; x=uy - 3</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=gtOVJ2xA2mQ">✅ Métodos para ED de primer orden: ED de BERNOULLI - 1</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=cARZgcbABes">✅ Métodos para ED de primer orden: ED de BERNOULLI - 2</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=6UPO-7lObUo">✅ Métodos para ED de primer orden: REDUCCION PARA SEPARACION DE VARIABLES - 1</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=JSGF5EjPlGE">✅ Métodos para ED de primer orden: REDUCCION PARA SEPARACION DE VARIABLES - 2</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=AVj5o1zAVz4">✅ EJERCICIOS PRACTICA: Metodos para ED de primer orden</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=ypBy6KH8TIM">✅ EJERCICIOS PRACTICA: Metodos para ED de primer orden</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=9vr6W_PxKSY">✅ EJERCICIOS PRACTICA: Metodos para ED de primer orden</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=SPXbpuAw9a8">✅ Modelos lineales de primer orden: CRECIEMIENTO Y DECAIMIENTO - 1</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://www.youtube.com/watch?v=u2ypQbyDCZA">✅ Modelos lineales de primer orden: CRECIEMIENTO Y DECAIMIENTO - 2</a></li>
+                </ul>
+            </div>
+
+            <!-- Capítulo 2: Ecuaciones diferenciales de orden superior -->
+            <div class="mb-5">
+                <h2 class="chapter-title">Capítulo 2: Ecuaciones diferenciales de orden superior</h2>
+                <div class="video-container">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/HPwyBzOMsH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <ul class="lesson-list">
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/HPwyBzOMsH8">✅ Teoría preliminar: ecuaciones lineales</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/jDyHzkgF69o">✅ Reducción de orden</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/xstLmDcOVJE">✅ Ecuaciones lineales homogéneas con coeficientes constantes</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/84Fsm4kYBxI">✅ Coeficientes indeterminados</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/0Z093wZlXJI">✅ Variación de parámetros</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/pASTh7Z9yfU">✅ Ecuación de Cauchy-Euler</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/720_J8iM4os">✅ Ecuaciones no lineales</a></li>
+                </ul>
+            </div>
+
+            <!-- Capítulo 3: La transformada de Laplace -->
+            <div class="mb-1">
+                <h2 class="chapter-title">Capítulo 3: La transformada de Laplace</h2>
+                <div class="video-container">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/nxRN4pXENzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <ul class="lesson-list">
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/nxRN4pXENzo">✅ Definición de la transformada de Laplace</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/tobD6pM6mpI">✅ La transformada inversa y transformadas de derivadas</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/rix3cfkMLFc">✅ Teoremas de traslación</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/syJz-EKxhiU">✅ Propiedades operacionales adicionales</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/OAME_IWsGDY">✅ La función delta de Dirac</a></li>
+                    <li class="lesson-item"><a class="btn btn-materias" href="https://youtu.be/_ZbQh1lQ7s0">✅ Sistemas de ecuaciones diferenciales lineales</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biblioteca -->
+    <section class="py-2 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Biblioteca Virtual</h2>
+            <a href="https://drive.google.com/drive/folders/12OWtoVHq22UEZvsWO7vPn0PgAw6CSL4L?usp=sharing" class="btn btn-success btn-lg">📚 Acceder a la Biblioteca</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2024 <span class="brand-green">easy</span><span class="brand-red">class</span>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
